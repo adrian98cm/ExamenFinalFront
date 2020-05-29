@@ -30,13 +30,9 @@ const QUERY = gql`
 
 let infoplaneta = 0;
 
-
-const onChange = ()=>{
+const onChange = () => {
   infoplaneta = 1;
-
-}
-
-
+};
 
 const Character = (props) => {
   const { loading, error, data, refetch, networkStatus } = useQuery(QUERY, {
@@ -90,9 +86,7 @@ const Character = (props) => {
             <p key={ch.id}>Especie: {ch.species}</p>
             <p key={ch.id}>Tipo: {ch.type}</p>
             <p key={ch.id}>Género: {ch.gender}</p>
-            <button onClick={() => onChange()}>
-              Info planeta
-            </button>
+            <button onClick={() => onChange()}>Info planeta</button>
           </div>
         ))}
       </div>

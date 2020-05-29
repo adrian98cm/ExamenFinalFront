@@ -26,11 +26,10 @@ function App() {
   };
 
   const updatePages = (cant) => {
-    if(pages >= 1 ){
-      setPages(pages+cant)
+    if (pages >= 1) {
+      setPages(pages + cant);
     }
-  }
-
+  };
 
   return (
     <ApolloProvider client={client}>
